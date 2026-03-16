@@ -30,8 +30,7 @@
 
     <title>Gatarita Games | Game Developer in Sri Lanka</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/66db83a902.js" crossorigin="anonymous"></script>
 
     <style>
@@ -63,16 +62,18 @@
 
         }
 
+        .card {
+            --bulma-card-background-color: rgba(0, 0, 0, 0.2) !important;
+
+        }
+
         .profile-link a {
             color: white !important;
         }
 
-        html {
-            scroll-snap-type: y mandatory;
-        }
 
         body {
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Space Grotesk", sans-serif;
         }
 
         iframe {
@@ -91,9 +92,9 @@
         }
 
         .snap-scroll {
-            scroll-snap-align: start;
+            scroll-snap-align: end;
             scroll-snap-stop: always;
-            scroll-snap-type: y proximity;
+            scroll-snap-type: y mandatory;
         }
 
         .has-equal-height {
@@ -203,17 +204,17 @@
     </video>
 
     <!-- Hero-->
-    <section class="hero is-fullheight snap-scroll">
+    <section class="hero is-fullheight">
         <div class="hero-body">
             <div class="container columns is-desktop is-vcentered is-centered">
                 <div class="column is-2"></div>
                 <div class="column">
-                    <div class="container has-text-centered has-text-left">
+                    <div class="container has-text-left">
                         <figure class="image">
                             <img class="image logo" src="img/logo.png" />
                         </figure>
-                        <h2 class="subtitle">2 best friends, making games together since 2020</h2>
-                        <span class="icon-text has-text-white">
+                        <h6 class="has-text-white"><i>since 2020</i> <br>3 best friends, making games</h6>
+                        <span class="icon-text has-text-warning">
                             <a href="https://gatheesha.itch.io/" aria-label="Visit our Itch.io page">
                                 <span class="icon">
                                     <i class="fa-brands fa-itch-io"></i>
@@ -253,14 +254,13 @@
         </div>
     </section>
 
-    <!-- Testemonials-->
-    <section class="hero is-fullheight snap-scroll">
+    <!-- Testimonials-->
+    <section class="hero is-fullheight">
         <div class="hero-body">
-            <div class="is-felx container has-text-centered">
-                <div class="container has-text-centered my-6">
-                    <p class="title has-text-light">See what people have to say!</p>
-                </div>
-                <div class="container grid is-col-min-12">
+            <div class="container has-text-centered">
+                <p class="title has-text-light">See what people have to say!</p>
+
+                <div class="grid is-col-min-12">
                     <div class="cell">
                         <div class="card has-equal-height">
                             <div class="card-content">
@@ -463,289 +463,267 @@
     </section>
 
     <!-- Meet the team -->
-    <section class="hero is-fullheight snap-scroll">
+    <section class="hero is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
                 <p class="title has-text-light">Meet The Team</p>
+
+                <div class="columns">
+                    <div class="column has-text-left">
+                        <figure class="image is-128x128">
+                            <img class="is-rounded" src="img/inuka.png" alt="Inuka Senanayake" />
+                        </figure>
+                        <br>
+                        <h1 class="title">Inuka Senanayake</h1>
+                        <h2 class="subtitle">does the coding stuff</h2>
+                        <p>godtier in <b>godot's gdscript</b> <br>
+                            along with <b>js, python, c#</b></p><br>
+                        <p>knows: <b>godot, unity, unreal, love2d</b></p>
+                        <span class="icon-text profile-link my-4">
+                            <a href="https://inuka69.itch.io/" aria-label="Visit Inuka's Itch.io page">
+                                <span class="icon">
+                                    <i class="fa-brands fa-itch-io"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/inukasenanayake/" aria-label="Visit Inuka's Linked-in">
+                                <span class="icon">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UC84SqwUNyLT_6BnQ-gnmBJA"
+                                aria-label="Visit Inuka's YouTube channel">
+                                <span class="icon">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </span>
+                            </a>
+                            <a href="https://web.facebook.com/inuka.senanayake"
+                                aria-label="Visit Inuka's Facebook Profile">
+                                <span class="icon">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </span>
+                            </a>
+                            <a href="https://x.com/InukaSenanayak1"
+                                aria-label="Visit Inuka's X (formerly Twitter) profile">
+                                <span class="icon">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </span>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="column has-text-centered">
+                        <div class="is-flex is-justify-content-center">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded" src="img/gath2.png" alt="Gatheesha නිපුල්ම" />
+                            </figure>
+                        </div>
+                        <br>
+                        <h1 class="title">
+                            Gatheesha නිපුල්ම
+                        </h1>
+                        <h2 class="subtitle">does the visual stuff</h2>
+                        <p>godtier in <b>godot, unity, photoshop, illustrator</b> <br>
+                            along with <b>gdscript, glsl, css, python and blender</b></p><br>
+                        <p>knows: <b>animate, after effects, CI/CD and shader stuff</b></p>
+                        <span class="icon-text profile-link my-4">
+                            <a href="https://gatheesha.itch.io/" aria-label="Visit Gath's Itch.io page">
+                                <span class="icon">
+                                    <i class="fa-brands fa-itch-io"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gatheesha/" aria-label="Visit Gath's Linked-in">
+                                <span class="icon">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.youtube.com/@gatheesha22" aria-label="Visit Gath's YouTube channel">
+                                <span class="icon">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </span>
+                            </a>
+                            <a href="https://web.facebook.com/gatheesha22/" aria-label="Visit Gath's Facebook Profile">
+                                <span class="icon">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </span>
+                            </a>
+                            <a href="https://x.com/Gatheesha" aria-label="Visit Gath's X (formerly Twitter) profile">
+                                <span class="icon">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </span>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="column has-text-right">
+                        <div class="is-flex is-justify-content-end">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded" src="img/rashmi.png" alt="Rashmi Ishcharya" />
+                            </figure>
+                        </div>
+                        <br>
+                        <h1 class="title">Rashmi Ishcharya</h1>
+                        <h2 class="subtitle">does the drawing stuff</h2>
+                        <p>godtier in <b>traditional art, digital art</b> <br>
+                            along with <b>photoshop, ibispaint and blender</b></p><br>
+                        <p>knows: <b>godot, illustrator</b></p>
+                        <span class="icon-text profile-link my-4">
+                            <a href="https://ravienx-001.itch.io/" aria-label="Visit Rashmi's Itch.io page">
+                                <span class="icon">
+                                    <i class="fa-brands fa-itch-io"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/rashmiishcharayajayasekara/"
+                                aria-label="Visit Rashmi's Linked-in">
+                                <span class="icon">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCU6jYk1K8Gj0dxcQl3o3LPg?sub_conformation=1" Visit
+                                Rashmi's YouTube channel">
+                                <span class="icon">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.instagram.com/rashmiishcharyajayasekara/"
+                                aria-label="Visit Rashmi's profile">
+                                <span class="icon">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Inuka-->
-    <section class="hero is-fullheight snap-scroll">
-        <div class="hero-body">
-            <div class="container has-text-centered has-text-left">
-                <h1 class="title has-text-white">
-                    <figure class="image is-128x128">
-                        <img class="is-rounded" src="img/inuka.png" alt="Inuka Senanayake" />
-                    </figure>
-                    <br>
-                    Inuka Senanayake
-                </h1>
-                <h2 class="subtitle">does the coding stuff</h2>
-                <p>godtier in <b>godot's gdscript</b> <br>
-                    along with <b>js, python, c#</b></p><br>
-                <p>knows: <b>godot, unity, unreal, love2d</b></p>
-                <span class="icon-text profile-link my-4">
-                    <a href="https://inuka69.itch.io/" aria-label="Visit Inuka's Itch.io page">
-                        <span class="icon">
-                            <i class="fa-brands fa-itch-io"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/inukasenanayake/" aria-label="Visit Inuka's Linked-in">
-                        <span class="icon">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UC84SqwUNyLT_6BnQ-gnmBJA"
-                        aria-label="Visit Inuka's YouTube channel">
-                        <span class="icon">
-                            <i class="fa-brands fa-youtube"></i>
-                        </span>
-                    </a>
-                    <a href="https://web.facebook.com/inuka.senanayake" aria-label="Visit Inuka's Facebook Profile">
-                        <span class="icon">
-                            <i class="fa-brands fa-facebook"></i>
-                        </span>
-                    </a>
-                    <a href="https://x.com/InukaSenanayak1" aria-label="Visit Inuka's X (formerly Twitter) profile">
-                        <span class="icon">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </span>
-                    </a>
-                </span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gatheesha-->
-    <section class="hero is-fullheight snap-scroll">
-        <div class="hero-body">
-            <div class="container has-text-centered has-text-left">
-                <h1 class="title ">
-                    <figure class="image is-128x128">
-                        <img class="is-rounded" src="img/gath2.png" alt="Gatheesha නිපුල්ම" />
-                    </figure>
-                    <br>
-                    Gatheesha නිපුල්ම
-                </h1>
-                <h2 class="subtitle">does the visual stuff</h2>
-                <p>godtier in <b>godot, unity, photoshop, illustrator</b> <br>
-                    along with <b>gdscript, glsl, css, python and blender</b></p><br>
-                <p>knows: <b>animate, after effects, CI/CD and shader stuff</b></p>
-                <span class="icon-text profile-link my-4">
-                    <a href="https://gatheesha.itch.io/" aria-label="Visit Gath's Itch.io page">
-                        <span class="icon">
-                            <i class="fa-brands fa-itch-io"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/gatheesha/" aria-label="Visit Gath's Linked-in">
-                        <span class="icon">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.youtube.com/@gatheesha22" aria-label="Visit Gath's YouTube channel">
-                        <span class="icon">
-                            <i class="fa-brands fa-youtube"></i>
-                        </span>
-                    </a>
-                    <a href="https://web.facebook.com/gatheesha22/" aria-label="Visit Gath's Facebook Profile">
-                        <span class="icon">
-                            <i class="fa-brands fa-facebook"></i>
-                        </span>
-                    </a>
-                    <a href="https://x.com/Gatheesha" aria-label="Visit Gath's X (formerly Twitter) profile">
-                        <span class="icon">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </span>
-                    </a>
-                </span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rashmi-->
-    <section class="hero is-fullheight snap-scroll">
-        <div class="hero-body">
-            <div class="container has-text-centered has-text-left">
-                <h1 class="title ">
-                    <figure class="image is-128x128">
-                        <img class="is-rounded" src="img/rashmi.png" alt="Gatheesha නිපුල්ම" />
-                    </figure>
-                    <br>
-                    Rashmi Ishcharya
-                </h1>
-                <h2 class="subtitle">does the drawing stuff</h2>
-                <p>godtier in <b>traditional art, digital art</b> <br>
-                    along with <b>photoshop, ibispaint and blender</b></p><br>
-                <p>knows: <b>godot, illustrator</b></p>
-                <span class="icon-text profile-link my-4">
-                    <a href="https://ravienx-001.itch.io/" aria-label="Visit Rashmi's Itch.io page">
-                        <span class="icon">
-                            <i class="fa-brands fa-itch-io"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/rashmiishcharayajayasekara/"
-                        aria-label="Visit Rashmi's Linked-in">
-                        <span class="icon">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCU6jYk1K8Gj0dxcQl3o3LPg?sub_conformation=1" Visit Rashmi's
-                        YouTube channel">
-                        <span class="icon">
-                            <i class="fa-brands fa-youtube"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/rashmiishcharyajayasekara/" aria-label="Visit Rashmi's profile">
-                        <span class="icon">
-                            <i class="fa-brands fa-instagram"></i>
-                        </span>
-                    </a>
-                </span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Game we made-->
-    <section class="hero is-fullheight snap-scroll">
+    <!-- Games We Made -->
+    <section class="hero is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
                 <p class="title has-text-light">Games We Made</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Royalbutts -->
-    <section class="hero is-fullheight snap-scroll">
-        <div class="hero-body">
-            <div class="container columns is-centered">
-                <div class="column is-2"></div>
-                <div class="column">
-                    <!-- <div class="header"></div> -->
-                    <figure class="image is-narrow">
-                        <img id="slideshow" src="img/RoyalbuttsCharacterPosters-YOU.jpg" />
-                    </figure>
-                </div>
-                <div class="column">
-                    <div class="container has-text-centered has-text-left ">
-                        <h1 class="title has-text-white">
-                            Massacre Of Royalbutts
-                        </h1>
-                        <div class="subtitle">
-                            <b>Godot</b> | 2D | Side Scrolling | Beat-em Up
+                <div class="columns">
+                    <div class="column">
+                        <div class="container columns is-centered">
+                            <div class="column">
+                                <!-- <div class="header"></div> -->
+                                <figure class="image is-narrow">
+                                    <img id="slideshow" src="img/RoyalbuttsCharacterPosters-YOU.jpg" />
+                                </figure>
+                            </div>
+                            <div class="column">
+                                <div class="container has-text-centered has-text-left ">
+                                    <h1 class="title has-text-white">
+                                        Massacre Of Royalbutts
+                                    </h1>
+                                    <div class="subtitle">
+                                        <b>Godot</b> | 2D | Side Scrolling | Beat-em Up
+                                    </div>
+                                    <p>our debut commerical mobile game. Royal Butts is a 2D side scrolling
+                                        shoot-em-up game featuring a global leaderboard, 11 levels with 3 boss fights
+                                        plus a
+                                        secret
+                                        ending.</p>
+                                    <br>
+                                    <div class="buttons">
+                                        <a href="https://gatheesha.itch.io/royalbutts">
+                                            <div class="button is-warning">
+                                                <span class="icon">
+                                                    <i class="fa-brands fa-itch-io"></i>
+                                                </span>
+                                                <span><strong>play</strong></span>
+                                            </div>
+                                        </a>
+                                        <a href="https://youtu.be/3MrK3M12Euk?si=QY4XuVGm9qBUKE1E">
+                                            <div class="button is-warning">
+                                                <span class="icon">
+                                                    <i class="fa-brands fa-youtube"></i>
+                                                </span>
+                                                <span><strong>trailer</strong></span>
+                                            </div>
+                                        </a>
+                                        <a href="https://youtube.com/shorts/adVe7SIMdYM?si=GK_yd4Wfe2-GekTD">
+                                            <div class="button is-warning">
+                                                <span class="icon">
+                                                    <i class="fa-brands fa-youtube"></i>
+                                                </span>
+                                                <span><strong>fun vlog</strong></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!--  <div class="buttons">
+                                        <button class="button js-modal-trigger  is-white is-outlined"
+                                            data-target="modal-royalbutts">
+                                            <strong>Read More </strong>
+                                        </button>
+                                    </div>  -->
+                                </div>
+                            </div>
                         </div>
-                        <p>our debut commerical mobile game. Royal Butts is a 2D side scrolling
-                            shoot-em-up game featuring a global leaderboard, 11 levels with 3 boss fights plus a
-                            secret
-                            ending.</p>
-                        <br>
-                        <div class="buttons">
-                            <a href="https://gatheesha.itch.io/royalbutts">
-                                <div class="button is-warning">
-                                    <span class="icon">
-                                        <i class="fa-brands fa-itch-io"></i>
-                                    </span>
-                                    <span><strong>play</strong></span>
-                                </div>
-                            </a>
-                            <a href="https://youtu.be/3MrK3M12Euk?si=QY4XuVGm9qBUKE1E">
-                                <div class="button is-warning">
-                                    <span class="icon">
-                                        <i class="fa-brands fa-youtube"></i>
-                                    </span>
-                                    <span><strong>trailer</strong></span>
-                                </div>
-                            </a>
-                            <a href="https://youtube.com/shorts/adVe7SIMdYM?si=GK_yd4Wfe2-GekTD">
-                                <div class="button is-warning">
-                                    <span class="icon">
-                                        <i class="fa-brands fa-youtube"></i>
-                                    </span>
-                                    <span><strong>fun vlog</strong></span>
-                                </div>
-                            </a>
-                        </div>
-                        <!--  <div class="buttons">
-                            <button class="button js-modal-trigger  is-white is-outlined"
-                                data-target="modal-royalbutts">
-                                <strong>Read More </strong>
-                            </button>
-                        </div>  -->
                     </div>
-                </div>
-                <div class="column is-2"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sanwardaka-->
-    <section class="hero is-fullheight snap-scroll">
-        <div class="hero-body">
-            <div class="container columns is-centered">
-                <div class="column is-2"></div>
-                <div class="column">
-                    <!-- <div class="header"></div> -->
-                    <figure class="image">
-                        <img class="image" src="img/sanwardaka.jpg" />
-                    </figure>
-                </div>
-                <div class="column">
-                    <div class="container has-text-centered has-text-left ">
-                        <h1 class="title has-text-white">
-                            Sanwardaka
-                        </h1>
-                        <div class="subtitle">
-                            <b>Godot</b> | 2D | Puzzel | Platformer | Narrative
-                        </div>
-                        <p>A puzzel platformer that lets you satisfyingly hack through the levels with a broken pause
-                            menu, made within 3 days for Patch Notes v1.0 Game Jam 2025. (Jam theme was Error is the
-                            feature)</p>
-                        <br>
-                        <div class="buttons">
-                            <a href="https://gatheesha.itch.io/sanwardaka">
-                                <div class="button is-warning">
-                                    <span class="icon">
-                                        <i class="fa-brands fa-itch-io"></i>
-                                    </span>
-                                    <span><strong>play</strong></span>
+                    <div class="column">
+                        <div class="container columns is-centered">
+                            <div class="column">
+                                <!-- <div class="header"></div> -->
+                                <figure class="image">
+                                    <img class="image" src="img/sanwardaka.jpg" />
+                                </figure>
+                            </div>
+                            <div class="column">
+                                <div class="container has-text-centered has-text-left ">
+                                    <h1 class="title has-text-white">
+                                        Sanwardaka
+                                    </h1>
+                                    <div class="subtitle">
+                                        <b>Godot</b> | 2D | Puzzel | Platformer | Narrative
+                                    </div>
+                                    <p>A puzzle platformer that lets you satisfyingly hack through the levels with a
+                                        broken pause
+                                        menu, made within 3 days for Patch Notes v1.0 Game Jam 2025. (Jam theme was
+                                        Error is the
+                                        feature)</p>
+                                    <br>
+                                    <div class="buttons">
+                                        <a href="https://gatheesha.itch.io/sanwardaka">
+                                            <div class="button is-warning">
+                                                <span class="icon">
+                                                    <i class="fa-brands fa-itch-io"></i>
+                                                </span>
+                                                <span><strong>play</strong></span>
+                                            </div>
+                                        </a>
+                                        <a href="https://youtu.be/KRWMshur7xc?si=jxxxvmHijJ4UEf1B">
+                                            <div class="button is-warning">
+                                                <span class="icon">
+                                                    <i class="fa-brands fa-youtube"></i>
+                                                </span>
+                                                <span><strong>walkthrough</strong></span>
+                                            </div>
+                                        </a>
+                                        <a href="https://youtube.com/shorts/dEcvFqvoQW0?feature=share">
+                                            <div class="button is-warning">
+                                                <span class="icon">
+                                                    <i class="fa-brands fa-youtube"></i>
+                                                </span>
+                                                <span><strong>fun vlog</strong></span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </a>
-                            <a href="https://youtu.be/KRWMshur7xc?si=jxxxvmHijJ4UEf1B">
-                                <div class="button is-warning">
-                                    <span class="icon">
-                                        <i class="fa-brands fa-youtube"></i>
-                                    </span>
-                                    <span><strong>walkthrough</strong></span>
-                                </div>
-                            </a>
-                            <a href="https://youtube.com/shorts/dEcvFqvoQW0?feature=share">
-                                <div class="button is-warning">
-                                    <span class="icon">
-                                        <i class="fa-brands fa-youtube"></i>
-                                    </span>
-                                    <span><strong>fun vlog</strong></span>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="column is-2"></div>
             </div>
         </div>
     </section>
 
     <!-- Why Work With Us-->
-    <section class="hero is-fullheight snap-scroll">
+    <section class="hero is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
+                <p class="title has-text-light">Why Work With Us</p>
 
-                <div class="container has-text-centered my-6">
-                    <p class="title has-text-light">Why Work With Us</p>
-                </div>
-
-                <div class="container grid is-col-min-12">
-
+                <div class="grid is-col-min-12">
                     <!-- Demo Projects Card -->
                     <div class="cell">
                         <div class="card has-equal-height">
@@ -795,20 +773,18 @@
                                     This helps ensure the core gameplay works as intended and allows both sides to align
                                     on the mechanics early in the project.
                                 </p>
-                                        <figure class="image">
-                                            <img src="img/prototypes.gif">
-                                        </figure>
+                                <figure class="image">
+                                    <img src="img/prototypes.gif">
+                                </figure>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Client Projects -->
-    <!-- <section class="section snap-scroll">
+    <!-- <section class="section">
         <div class="container mb-6">
             <h1 class="title">Client Projects</h1>
             <h2 class="subtitle is-6">
@@ -817,7 +793,7 @@
         </div>
         <div class="container">
             <div class="columns is-multiline">
-                <div class="column is-one-third snap-scroll">
+                <div class="column is-one-third">
                     <div class="card">
                         <div class="card-image">
                             <figure class="image">
@@ -843,7 +819,7 @@
                     </div>
                 </div>
 
-                <div class="column is-one-third snap-scroll">
+                <div class="column is-one-third">
                     <div class="card has-equal-height">
                         <div class="card-image">
                             <figure class="image">
@@ -860,7 +836,7 @@
                     </div>
                 </div>
 
-                <div class="column is-one-third snap-scroll">
+                <div class="column is-one-third">
                     <div class="card has-equal-height">
                         <div class="card-image">
                             <figure class="image ">
@@ -883,254 +859,253 @@
     </section> -->
 
     <!-- Jam Games -->
-    <section class="section snap-scroll">
-        <div class="container mb-6">
-            <h1 class="title">Jam Games</h1>
-            <h2 class="subtitle is-6">
-                Featured games we made for game jams. <br>
-                Game jams are game dev marathons to create a complete game in small time frame.
-            </h2>
-        </div>
-        <div class="container">
-            <div class="columns is-multiline">
-                <!-- Zombie Urthal Card -->
-                <div class="column is-one-third snap-scroll">
-                    <div class="card has-equal-height">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/zombieurthal/cover.jpg" alt="Zombie Urthal game cover" />
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4">Zombie Urthal</p>
-                                    <p class="subtitle is-6"><strong>Godot</strong> | 2D | Strategy | Simulation</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <p>A fast phased strategy/simulation game about managing a zombie army, made within 4
-                                    days for GMTK Game Jam 2024.</p>
-                                <p class="is-size-6"><time datetime="2024-02-18">20 Aug 2024</time></p>
-                            </div>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <span>
-                                    Play on
-                                    <a href="https://gatheesha.itch.io/zombieurathal">itch.io</a>
-                                </span>
-                            </p>
-                            <p class="card-footer-item">
-                                <span>Watch the <a href="https://youtu.be/EQdpoFCvJgk">fun vlog</a></span>
-                            </p>
-                        </footer>
-                    </div>
-                </div <!-- Yathura Card -->
-                <div class="column is-one-third">
-                    <div class="card has-equal-height">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/yathura.png" alt="Yathura game cover" />
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4">Yathura</p>
-                                    <p class="subtitle is-6"><strong>Godot</strong> | 2D | Adventure | Narrative |
-                                        Puzzle</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <p>Made within 4 days for Brackeys game jam 2024! Yathura is a game about escaping a
-                                    timeloop or a door but wait, is it really?</p>
-                                <p class="is-size-6"><time datetime="2024-02-18">18 Feb 2024</time></p>
-                            </div>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <span>
-                                    Play on
-                                    <a href="https://gatheesha.itch.io/yathura">itch.io</a>
-                                </span>
-                            </p>
-                        </footer>
-                    </div>
-                </div>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">Jam Games</h1>
 
-                <!-- Kotu Card -->
-                <div class="column is-one-third">
-                    <div class="card has-equal-height">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/kotu.png" alt="Kotu game cover" />
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4">Kotu</p>
-                                    <p class="subtitle is-6"><strong>Godot</strong> | 2D | Local Multiplayer</p>
+                <div class="columns is-multiline">
+                    <!-- Zombie Urthal Card -->
+                    <div class="column is-one-third">
+                        <div class="card has-equal-height">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/zombieurthal/cover.jpg" alt="Zombie Urthal game cover" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Zombie Urthal</p>
+                                        <p class="subtitle is-6"><strong>Godot</strong> | 2D | Strategy | Simulation</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <p>A fast phased strategy/simulation game about managing a zombie army, made within
+                                        4
+                                        days for GMTK Game Jam 2024.</p>
+                                    <p class="is-size-6"><time datetime="2024-02-18">20 Aug 2024</time></p>
                                 </div>
                             </div>
-                            <div class="content">
-                                <p>A local multiplayer co-op and versus game at the same time!</p>
-                                <p class="is-size-6"><time datetime="2021-12-19">19 Dec 2021</time></p>
-                            </div>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <span>
-                                    Play on
-                                    <a href="https://gatheesha.itch.io/kotu">itch.io</a>
-                                </span>
-                            </p>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- Aul Card -->
-                <div class="column is-one-third">
-                    <div class="card has-equal-height">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/aul.png" alt="Aul game cover" />
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4">Aul</p>
-                                    <p class="subtitle is-6"><strong>Unity</strong> | 2D | Topdown-shooter</p>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <p>Made within 1 week for Brackeys Game Jam 2021.2. A unfinished topdown zombie shooter.
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    <span>
+                                        Play on
+                                        <a href="https://gatheesha.itch.io/zombieurathal">itch.io</a>
+                                    </span>
                                 </p>
-                                <p class="is-size-6"><time datetime="2021-08-29">29 Aug 2021</time></p>
+                                <p class="card-footer-item">
+                                    <span>Watch the <a href="https://youtu.be/EQdpoFCvJgk">fun vlog</a></span>
+                                </p>
+                            </footer>
+                        </div>
+                    </div <!-- Yathura Card -->
+                    <div class="column is-one-third">
+                        <div class="card has-equal-height">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/yathura.png" alt="Yathura game cover" />
+                                </figure>
                             </div>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <span>
-                                    Play on
-                                    <a href="https://gatheesha.itch.io/aul">itch.io</a>
-                                </span>
-                            </p>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- Bittara Card -->
-                <div class="column is-one-third">
-                    <div class="card has-equal-height">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/bittara.png" alt="Bittara game cover" />
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4">Bittara</p>
-                                    <p class="subtitle is-6"><strong>Unity</strong> | 2D | Metroidvania</p>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Yathura</p>
+                                        <p class="subtitle is-6"><strong>Godot</strong> | 2D | Adventure | Narrative |
+                                            Puzzle</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <p>Made within 4 days for Brackeys game jam 2024! Yathura is a game about escaping a
+                                        timeloop or a door but wait, is it really?</p>
+                                    <p class="is-size-6"><time datetime="2024-02-18">18 Feb 2024</time></p>
                                 </div>
                             </div>
-                            <div class="content">
-                                <P>Simple metroidvania-style game we made for Newgrounds July jam 21.</P>
-
-                                <p><time datetime="2021-07-25">25 Jul 2021</time></p>
-
-                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    <span>
+                                        Play on
+                                        <a href="https://gatheesha.itch.io/yathura">itch.io</a>
+                                    </span>
+                                </p>
+                            </footer>
                         </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <span>
-                                    Play on
-                                    <a href="https://www.newgrounds.com/portal/view/807043">Newgrounds</a>
-                                </span>
-                            </p>
-                        </footer>
+                    </div>
+
+                    <!-- Kotu Card -->
+                    <div class="column is-one-third">
+                        <div class="card has-equal-height">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/kotu.png" alt="Kotu game cover" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Kotu</p>
+                                        <p class="subtitle is-6"><strong>Godot</strong> | 2D | Local Multiplayer</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <p>A local multiplayer co-op and versus game at the same time!</p>
+                                    <p class="is-size-6"><time datetime="2021-12-19">19 Dec 2021</time></p>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    <span>
+                                        Play on
+                                        <a href="https://gatheesha.itch.io/kotu">itch.io</a>
+                                    </span>
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <!-- Aul Card -->
+                    <div class="column is-one-third">
+                        <div class="card has-equal-height">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/aul.png" alt="Aul game cover" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Aul</p>
+                                        <p class="subtitle is-6"><strong>Unity</strong> | 2D | Topdown-shooter</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <p>Made within 1 week for Brackeys Game Jam 2021.2. A unfinished topdown zombie
+                                        shooter.
+                                    </p>
+                                    <p class="is-size-6"><time datetime="2021-08-29">29 Aug 2021</time></p>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    <span>
+                                        Play on
+                                        <a href="https://gatheesha.itch.io/aul">itch.io</a>
+                                    </span>
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <!-- Bittara Card -->
+                    <div class="column is-one-third">
+                        <div class="card has-equal-height">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/bittara.png" alt="Bittara game cover" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Bittara</p>
+                                        <p class="subtitle is-6"><strong>Unity</strong> | 2D | Metroidvania</p>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <P>Simple metroidvania-style game we made for Newgrounds July jam 21.</P>
+
+                                    <p><time datetime="2021-07-25">25 Jul 2021</time></p>
+
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    <span>
+                                        Play on
+                                        <a href="https://www.newgrounds.com/portal/view/807043">Newgrounds</a>
+                                    </span>
+                                </p>
+                            </footer>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
-    <!-- Commisioned Artwork Section -->
-    <section class="section snap-scroll">
-        <div class="container mb-6">
-            <h1 class="title">Commissioned Artwork</h1>
-            <h2 class="subtitle is-6">
-                Featured artworks we made for clients.
-            </h2>
-        </div>
-        <div class="container">
-            <div class="metro-grid">
-                <div class="metro-item">
-                    <figure class="image" onclick="openLightbox('img/commissioned-art/beach.png', 'Beach artwork')">
-                        <img src="img/commissioned-art/beach.png" alt="Beach artwork">
-                        <figcaption class="has-text-centered is-size-7 mt-1">Beachcomber Simulator Steam Header Capsule
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="metro-item">
-                    <figure class="image" onclick="openLightbox('img/commissioned-art/ape.jpg', 'Ape artwork')">
-                        <img src="img/commissioned-art/ape.jpg" alt="Ape artwork">
-                        <figcaption class="has-text-centered is-size-7 mt-1">Ap(e)ocalypse Promotional Artwork
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="metro-item">
-                    <figure class="image"
-                        onclick="openLightbox('img/commissioned-art/hoponit.jpg', 'Hop on it artwork')">
-                        <img src="img/commissioned-art/hoponit.jpg" alt="Hop on it artwork">
-                        <figcaption class="has-text-centered is-size-7 mt-1">Hop On It Steam Header Capsule</figcaption>
-                    </figure>
-                </div>
-                <div class="metro-item">
-                    <figure class="image" onclick="openLightbox('img/commissioned-art/chris.jpg', 'Chris artwork')">
-                        <img src="img/commissioned-art/chris.jpg" alt="Chris artwork">
-                        <figcaption class="has-text-centered is-size-7 mt-1">Everybody <3 Chris Albumart</figcaption>
-                    </figure>
-                </div>
-                <div class="metro-item">
-                    <figure class="image" onclick="openLightbox('img/commissioned-art/stage.png', 'Stage artwork')">
-                        <img src="img/commissioned-art/stage.png" alt="Stage artwork">
-                        <figcaption class="has-text-centered is-size-7 mt-1">Stage Cleared Steam Header Capsule
-                        </figcaption>
-                    </figure>
-                </div>
-                <!--<div class="metro-item">
-            <figure class="image" onclick="openLightbox('img/commissioned-art/icefinshing.png', 'Ice fishing artwork')">
-                <img src="img/commissioned-art/icefinshing.png" alt="Ice fishing artwork">
-                <figcaption class="has-text-centered is-size-7 mt-1">Ice Fishing Steam Header Capsule</figcaption>
-            </figure>
-        </div> -->
-                <div class="metro-item">
-                    <figure class="image"
-                        onclick="openLightbox('img/commissioned-art/icefishingv.png', 'Ice fishing v2 artwork')">
-                        <img src="img/commissioned-art/icefishingv.png" alt="Ice fishing v2 artwork">
-                        <figcaption class="has-text-centered is-size-7 mt-1">Ice Fishing Steam Vertical Capsule
-                        </figcaption>
-                    </figure>
-                </div>
+    <!-- Commissioned Artwork Section -->
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">Commissioned Artwork</h1>
 
-                <div class="metro-item">
-                    <figure class="image"
-                        onclick="openLightbox('img/commissioned-art/spacerunnerx.png', 'Space Runner X Steam Header Capsule')">
-                        <img src="img/commissioned-art/spacerunnerx.png" alt="Space Runner X Steam Header Capsule">
-                        <figcaption class="has-text-centered is-size-7 mt-1">Space Runner X Steam Header Capsule
-                        </figcaption>
-                    </figure>
+                <div class="metro-grid">
+                    <div class="metro-item">
+                        <figure class="image" onclick="openLightbox('img/commissioned-art/beach.png', 'Beach artwork')">
+                            <img src="img/commissioned-art/beach.png" alt="Beach artwork">
+                            <figcaption class="has-text-centered is-size-7 mt-1">Beachcomber Simulator Steam Header
+                                Capsule
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="metro-item">
+                        <figure class="image" onclick="openLightbox('img/commissioned-art/ape.jpg', 'Ape artwork')">
+                            <img src="img/commissioned-art/ape.jpg" alt="Ape artwork">
+                            <figcaption class="has-text-centered is-size-7 mt-1">Ap(e)ocalypse Promotional Artwork
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="metro-item">
+                        <figure class="image"
+                            onclick="openLightbox('img/commissioned-art/hoponit.jpg', 'Hop on it artwork')">
+                            <img src="img/commissioned-art/hoponit.jpg" alt="Hop on it artwork">
+                            <figcaption class="has-text-centered is-size-7 mt-1">Hop On It Steam Header Capsule
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="metro-item">
+                        <figure class="image" onclick="openLightbox('img/commissioned-art/chris.jpg', 'Chris artwork')">
+                            <img src="img/commissioned-art/chris.jpg" alt="Chris artwork">
+                            <figcaption class="has-text-centered is-size-7 mt-1">Everybody <3 Chris
+                                    Albumart</figcaption>
+                        </figure>
+                    </div>
+                    <div class="metro-item">
+                        <figure class="image" onclick="openLightbox('img/commissioned-art/stage.png', 'Stage artwork')">
+                            <img src="img/commissioned-art/stage.png" alt="Stage artwork">
+                            <figcaption class="has-text-centered is-size-7 mt-1">Stage Cleared Steam Header Capsule
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!--<div class="metro-item">
+                        <figure class="image" onclick="openLightbox('img/commissioned-art/icefinshing.png', 'Ice fishing artwork')">
+                            <img src="img/commissioned-art/icefinshing.png" alt="Ice fishing artwork">
+                            <figcaption class="has-text-centered is-size-7 mt-1">Ice Fishing Steam Header Capsule</figcaption>
+                        </figure>
+                </div> -->
+                    <div class="metro-item">
+                        <figure class="image"
+                            onclick="openLightbox('img/commissioned-art/icefishingv.png', 'Ice fishing v2 artwork')">
+                            <img src="img/commissioned-art/icefishingv.png" alt="Ice fishing v2 artwork">
+                            <figcaption class="has-text-centered is-size-7 mt-1">Ice Fishing Steam Vertical Capsule
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="metro-item">
+                        <figure class="image"
+                            onclick="openLightbox('img/commissioned-art/spacerunnerx.png', 'Space Runner X Steam Header Capsule')">
+                            <img src="img/commissioned-art/spacerunnerx.png" alt="Space Runner X Steam Header Capsule">
+                            <figcaption class="has-text-centered is-size-7 mt-1">Space Runner X Steam Header Capsule
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="hero is-fullheight snap-scroll">
+    <section class="hero is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
                 <h2 class="title has-text-white">Ready to Start?</h2>
@@ -1208,10 +1183,11 @@
 
     <!-- Footer Section -->
     <section class="snap-scroll">
-        <footer class="footer has-background-warning has-text-black">
+        <footer class="footer has-background-black has-text-black">
             <div class="content has-text-centered">
-                <p>last updated <strong class="has-text-black">2026 March - gath</strong>,
-                    powered by <strong><a class="has-text-black" href="https://bulma.io/">bulma</a></p></strong>
+                <p class="has-text-light">last updated <strong> 2026 March -
+                        gath</strong>,powered by <strong><a class="has-text-light" href="https://bulma.io/">bulma</a>
+                </p></strong>
             </div>
         </footer>
     </section>
@@ -1291,10 +1267,7 @@
         document.addEventListener('keydown', e => {
             if (e.key === 'Escape') closeLightbox();
         });
-
-
     </script>
-
 </body>
 
 </html>
